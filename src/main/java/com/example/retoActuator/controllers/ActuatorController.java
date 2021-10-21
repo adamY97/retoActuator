@@ -9,12 +9,12 @@ public class ActuatorController {
 
 	@GetMapping("/empleado/{nombre}")
 	public String empleado(@PathVariable String nombre) {
-		return "Bienvenido empleado" + nombre;
+		return "Bienvenido empleado " + nombre;
 	}
 	
 	@GetMapping("/empleado/{nombre}/{id}")
 	public String empleado(@PathVariable String nombre, @PathVariable int id) {
-		return "Bienvenido empleado" + nombre + " con id (" + id +")";
+		return "Bienvenido empleado " + nombre + " con id (" + id +")";
 	}
 	
 //	@GetMapping("/empleado/{nombre}/{id}/{datos}")
